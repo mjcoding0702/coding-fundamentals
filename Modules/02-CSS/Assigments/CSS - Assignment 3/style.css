@@ -1,0 +1,26 @@
+.menu {    
+    /* Style for menu button */
+    position: relative;
+  }
+  
+  .submenu {    
+    /* Hide submenu */
+    position: absolute;
+    top: 20px;
+  }
+
+  .submenu-item1, .submenu-item2 {
+    display: block;
+    padding: 10px 50px;
+    background-color: lightgrey;
+  }
+  
+  .submenu-item1:hover {    
+    /* Show submenu on hover */
+    background-color: gray;
+  }
+
+  .submenu-item2:hover {    
+    /* Show submenu on hover */
+    background-color: gray;
+  }
