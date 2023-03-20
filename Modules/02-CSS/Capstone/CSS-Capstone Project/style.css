@@ -1,0 +1,54 @@
+body {
+    /* set default background color */
+    background-color: salmon;
+  }
+  
+  @media (max-width: 639px) {
+    /* 
+      - show mobile div
+      - hide tablet and desktop divs
+    */
+    .mobile {
+        display: block;
+    }
+    .tablet, .desktop {
+        display: none;
+    }
+    body {
+        background-color: red;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    /*
+      - show tablet div
+      - hide mobile and desktop divs
+      - change background color
+    */
+    .tablet {
+        display: block;
+    }
+    .mobile, .desktop {
+        display: none;
+    }
+    body {
+        background-color: green;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /*
+      - show desktop div
+      - hide mobile and tablet divs
+      - change background color
+    */
+    .desktop {
+        display: block;
+    }
+    .mobile, .tablet {
+        display: none;
+    }
+    body {
+        background-color: blue;
+    }
+  }
