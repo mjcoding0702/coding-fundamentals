@@ -1,0 +1,137 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero {
+    background-color: black;
+    padding: 20px 50px;
+}
+
+.blog {
+    display: flex;
+}
+
+.blog__content {
+    color: white;
+    flex: 2;
+    padding-right: 100px;
+}
+
+.blog__image {
+    height: auto;
+    object-fit: cover;
+    flex: 1;
+}
+
+.blog__image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card__section {
+    max-width: 85vw;
+    margin: auto;
+}
+
+.card__section h4 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.blog__cards {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Blog Cards*/
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.card__image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.card__content {
+    padding: 10px 20px;
+}
+
+.card__tags {
+    display: flex;
+}
+
+.tag {
+    color: white;
+    padding: 0px 10px;
+    background-color: indigo;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.tag p {
+    margin: 5px 5px;
+}
+
+.card__content h4 {
+    margin: 20px 10px 20px 0px;
+}
+
+#blog__title {
+    font-size: 24px;
+    padding-left: 30px;
+}
+.card__author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.logo__container {
+    display: flex;
+    align-items: center;
+}
+
+.logo__container p {
+}
+
+
+#logo {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+@media (min-width: 1024px) {
+    .blog__cards {
+        flex-direction: row;
+        margin: 0 auto;
+    }
+
+    .card {
+        max-width: 33%;
+        margin: 0 2rem 0;
+        margin-bottom: 0rem;
+        margin-right: 2rem;
+    }
+
+    .card__author {
+        font-size: 10px;
+}
+
+
