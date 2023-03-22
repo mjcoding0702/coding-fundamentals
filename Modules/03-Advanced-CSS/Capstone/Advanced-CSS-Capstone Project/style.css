@@ -1,0 +1,228 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    max-width: 80vw;
+    margin: 50px auto;
+}
+
+/*Navigation Bar*/
+.nav__layout {
+    padding: 10px;
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav__content {
+    display: flex;
+    flex: 2;
+    align-items: center;
+}
+
+.logo__container a svg{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.nav__links a {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+}
+
+.nav__links > * + * {
+    margin-left: 10px;
+}
+
+.button__container {
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+}
+
+.button__container button {
+    padding: 5px 15px;
+    border: transparent;
+    background-color: rgb(209, 208, 208);
+    border-radius: 6px;
+}
+
+/*Heading section*/
+.heading__container {
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heading__content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    padding-right: 100px;
+}
+
+.image__container {
+    flex: 1;
+}
+
+.image__container pattern circle {
+    fill: gray;
+}
+
+/*Contact card*/
+.contact__layout {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(18, 230, 177);
+}
+
+.left__section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.right__section {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    background-color: rgb(249, 249, 249);
+    height: fit-content;
+}
+
+.right__section > * + *{
+    margin-bottom: 20px;
+}
+
+.contact__container {
+    padding: 20px 40px 20px 30px;
+    color: rgb(244, 244, 244);
+}
+
+.phone__container{
+    display: flex;
+    align-items: center;
+}
+
+.phone__container > * + * {
+    padding-left: 10px;
+}
+
+.email__container {
+    display: flex;
+    align-items: center;
+}
+
+.email__container > * + * {
+    padding-left: 10px;
+}
+
+.contact__links {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contact__links > * + * {
+    margin-left: 30px;
+}
+
+.social__link {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    stroke: rgb(18, 230, 177);
+    border-radius: 9999px;
+}
+
+/*Form*/
+form {
+    padding: 20px 40px 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.left__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.right__col {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.contact__row {
+    display: flex;
+
+}
+
+.side__text { 
+    display: flex;
+    justify-content: space-between;
+}
+
+.subject__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.message__row textarea {
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+.message__row textarea:focus {
+    outline: none;
+}
+
+form button {
+    width: fit-content;
+    align-self: flex-end;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: rgb(18, 230, 177);
+    color: white;
+    border-color: transparent;
+}
+
+form input {
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+.side__content {
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Capstone Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!--Nav Bar-->
+        <div class="nav__layout">
+            <div class="nav__content">
+                <div class="logo__container">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="nav__links">
+                    <a href="#">Changelog</a>
+                    <a href="#">About</a>
+                    <a href="#">Partners</a>
+                    <a href="#">News</a>
+                </div>
+            </div>
+            <div class="button__container">
+                <button type="button">Login</button>
+            </div>
+        </div>
+
+        <!--Heading-->
+        <div class="heading__container">
+            <div class="heading__content">
+                <h1>Get in touch</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat eum eaque excepturi esse. Laboriosam dolorum magni perferendis. Ut, laboriosam.</p>
+            </div>
+
+            <div class="image__container">
+                <svg id="dotted__background" width="100%" height="100%">
+                    <pattern id="pattern-circles" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse">
+                       <circle id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle>
+                    </pattern>
+                    <rect  id="rect" x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)"></rect>
+                  </svg>
+            </div>
+        </div>
+
+        <!--Contact Card-->
+        <div class="contact__layout">
+            <!--Left-->
+            <div class="left__section">
+                <div class="contact__container">
+                    <p>Contact Information</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, cumque.</p>
+                    <div class="phone__container">
+                        <svg class="w-6 h-6 social__link" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>
+                        <p>+6013-483 1939</p> 
+                    </div>
+
+                    <div class="email__container">
+                        <svg class="w-6 h-6 social__link" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
+                        </svg>
+                        <p>support@workcation.com</p>
+                    </div>
+
+                    <div class="contact__links">
+                        <a href="https://www.facebook.com/">
+                            <svg class="social__link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path class="logo" d="M20.596 0H3.403C1.524 0 0 1.524 0 3.404v17.192C0 22.477 1.524 24 3.403 24H12.928v-9.294H9.87v-3.605h3.058V8.578c0-3.034 1.85-4.679 4.536-4.679 1.293 0 2.405.097 2.729.14v3.15l-1.87.001c-1.47 0-1.757.698-1.757 1.718v2.252h3.51l-.457 3.605h-3.053V24h5.986c1.879 0 3.413-1.524 3.413-3.405V3.405c0-1.879-1.534-3.405-3.413-3.405z"/>
+                            </svg>
+                        </a>
+        
+                        <a href="https://www.instagram.com/">
+                            <svg class="social__link" width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z"/><path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z"/></svg>
+                        </a>
+        
+                        <a href="https://twitter.com/">
+                            <svg class="social__link" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8486 5.65845C13.1442 5.65845 11.7626 7.0401 11.7626 8.74446C11.7626 8.95304 11.7831 9.15581 11.822 9.35119C11.8846 9.66589 11.7924 9.99153 11.5741 10.2267C11.3558 10.4619 11.0379 10.578 10.7194 10.5389C8.51116 10.268 6.50248 9.35556 4.88498 7.9954C4.91649 8.59732 5.12515 9.23671 5.57799 9.90654L6.25677 10.9106L5.14211 11.3863L4.92704 11.4781C5.0869 11.6609 5.2791 11.8487 5.49369 12.0332C5.73717 12.2425 5.97247 12.4165 6.14726 12.5381C6.23408 12.5985 6.30452 12.645 6.35171 12.6755C6.37527 12.6907 6.39294 12.7018 6.40383 12.7086L6.41495 12.7155L6.41519 12.7157L6.41551 12.7159L6.41578 12.7161L6.41619 12.7163L6.41647 12.7165L7.96448 13.655L6.34397 14.4653C6.26374 14.5054 6.18367 14.5412 6.10393 14.573C6.42924 14.8471 6.82517 15.0995 7.2464 15.2986L8.63623 15.9556L7.47226 16.9598C6.8369 17.508 6.19778 17.9166 5.36946 18.1326C6.59681 18.7875 8.00315 19.1596 9.49941 19.1596C14.3045 19.1596 18.1746 15.325 18.1746 10.6256V10.1059L18.5998 9.80721C19.2636 9.34107 19.7329 8.71068 20.0689 7.99004H18.5398H17.9084L17.637 7.41994C17.1401 6.37633 16.0772 5.65845 14.8486 5.65845ZM3.56882 12.9581C3.38031 13.174 3.29093 13.4642 3.33193 13.7553C3.44474 14.5563 3.92441 15.2462 4.45444 15.7728C4.59838 15.9158 4.75232 16.0531 4.91396 16.184C4.88926 16.1909 4.86437 16.1975 4.83925 16.2038C4.35789 16.3243 3.70926 16.3494 2.62755 16.2434C2.20934 16.2024 1.81014 16.4273 1.62841 16.8062C1.44668 17.185 1.5212 17.6371 1.81492 17.9376C3.75693 19.9245 6.48413 21.1596 9.49941 21.1596C15.212 21.1596 19.8978 16.7239 20.1628 11.126C21.4521 10.0429 22.0976 8.57673 22.4458 7.24263C22.5241 6.94292 22.459 6.62387 22.2696 6.37873C22.0803 6.13359 21.788 5.99004 21.4783 5.99004H19.1247C18.2201 4.58853 16.6437 3.65845 14.8486 3.65845C12.1796 3.65845 9.99072 5.71435 9.7793 8.32892C7.91032 7.84456 6.2705 6.78758 5.05863 5.35408C4.83759 5.09261 4.49814 4.9624 4.15894 5.00897C3.81974 5.05554 3.52794 5.27241 3.38555 5.58378C2.78087 6.90597 2.66434 8.43104 3.34116 9.98046L3.10746 10.0802C2.64466 10.2777 2.40073 10.7884 2.5379 11.2725C2.72276 11.925 3.14129 12.5011 3.56882 12.9581Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Right-->
+            <form class="right__section">
+                <h4>Send us a message</h4>
+                <div class="name__row">
+                    <div class="left__col">
+                        <label for="firstName">First Name</label>
+                        <input type="text">
+                    </div>
+                    <div class="right__col">
+                        <label for="lastName">Last Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+                
+                <div class="contact__row">
+                    <div class="left__col">
+                        <label for="email">Email</label>
+                        <input type="email">
+                    </div>
+                    <div class="right__col">
+                        <label class="side__text" for="phone">
+                            Phone
+                            <span class="side__content"><sm>Optional</sm></span>
+                        </label>
+                        <input type="tel">
+                    </div>
+                </div>
+
+            
+                <div class="subject__row">
+                    <label for="subject">Subject</label>
+                    <input type="text">
+                </div>
+            
+                <div class="message__row">
+                    <label class="side__text" for="message">
+                        Message
+                        <span class="side__content"><sm>Max. 500 characters</sm></span>
+                    </label>
+                    <textarea name="message" id="" cols="max" rows="5"></textarea>
+                </div>
+                <button>
+                    Submit
+                </button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
