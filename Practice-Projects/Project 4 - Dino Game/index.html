@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3  - Dino Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body id="game">
+    <div class="ground">
+        <div class="cactus"></div>
+    </div>
+    <div class="score">
+        <span class="current-score">00000</span>
+    </div>
+    <div class="messages">
+        <p>Press any button to play</p>
+        <p>Game Over</p>
+    </div>
+
+    <div class="dino"></div>
+    <div class="resources">
+        <audio class="audio-jump" src="jump.wav"></audio>
+        <audio class="audio-die" src="die.wav"></audio>
+        <audio class="audio-point" src="point.wav"></audio>
+    </div>
+    <div class="footer">
+        <input type="checkbox" name="selfplay" id="selfplay" value="true">
+        <label for="selfplay">Enable Self Play</label>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
