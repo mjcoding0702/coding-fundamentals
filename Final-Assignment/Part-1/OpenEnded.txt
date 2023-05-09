@@ -1,0 +1,41 @@
+Question 1
+Imagine we are asked to write "I love coding" 100 times. Writing it out one by one would be
+a hassle. Hence, we write a short program to tell a robot to write "I love coding" for us.
+
+But, the robot doesn't know when to stop. Hence, we add a counter variable and set it to stop
+once it reaches 100.
+
+Here's how you write a basic `for loop` in JavaScript:
+for (let i = 0; i < 100; i++) {
+    //your code here will run 100 times
+}
+
+
+Question 2
+- console.log() only shows you what you asked for. It doesn't bring actual changes
+- return bring actual changes by storing/changing the result in/of a variable then display to user
+
+Question 3
+- truthy and falsy values are part of boolean data type.
+- You can see them as "YES" or "NO"
+- For example, when teacher asked you "Did you finished your homework"? Depending on your answer
+  "YES" or "NO", you could get different result from your teacher! (Reward / Punishment)
+
+Question 4
+- Internet is a huge inter-connected network that connect millions of devices around the world
+- Local area network (LAN) is a group of devices that communicate with each other in a 
+  same geographical area
+- Internet is basically a global network made of many LAN network, and it connects those LAN 
+  network through standardized communication protocols.
+
+Question 5
+- A website is essentially a physical store in the internet.
+- It has a domain name (store name), host server (a physical location), front-end that user 
+  see (interior design), backend server or engine that user doesn't see (kitchen or workshop)
+- So a typical walkthrough of a website would be something like this:
+  - A customer visit a store located in a specific place, loved the environment inside, placed
+    an order, the order is sent to the kitchen. Once order done, kitchen will send it back
+    to service crew to be handed to customer.
+  - A customer only needs to interact with the front-end (service crew), and get the result
+    at the front-end as well. He/she doesn't need to worry what is happening at the back 
+    of the store (website's backend) 
