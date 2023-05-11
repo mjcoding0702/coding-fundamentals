@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: monospace;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+}
+
+.undo-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+    max-height: 100%;
+    overflow:auto;
+    display: hidden;
+}
+
+.todo-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+    max-height: 100%;
+    overflow:auto;
+}
+
+h1 {
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.add-todo-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-todo-form input {
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.add-task-btn {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+
+/*Filter*/
+.filter {
+    margin: 10px auto;
+}
+
+/*Task List*/
+.task-list, .undo-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item, .deleted-item {
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid lightgray;
+    margin-left: 5px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 5px 0px;
+}
+
+.task-item.prioritized {
+    border-left: 5px solid orange;
+}
+
+.completed .task-content p {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-content {
+    display: flex;
+    margin-left: 4px;
+}
+
+.task-content p {
+    font-size: 16px;
+}
+
+.task-button {
+    display: flex;
+}
+
+.prioritize-btn {
+    margin-right: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #ff9800;
+    border:none;
+    border-radius: 5px;
+    color: white;
+}
+
+.delete-btn, .undo-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.undo-btn {
+    background-color: rgb(0, 162, 255);
+    margin-right: 10px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:active {
+    scale: 0.95;
+}
+
+
+/*Deleted Todos*/
+.undo-container .undo-description{
+    margin-bottom: 36px;
+}
+
+.deleted-item {
+    border-left: 5px solid rgb(0, 162, 255);
+}
+
+.deleted-item .task-content {
+    margin-left: 20px;
+}
+
+
+  
+  
+  
+  

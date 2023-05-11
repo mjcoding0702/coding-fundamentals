@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-container">
+            <h1>To-Do List</h1>
+            <form class="add-todo-form">
+                <input type="text" placeholder="Enter a new task..." id="task-input">
+                <button class="add-task-btn btn">Add Task</button>
+            </form>
+            <div class="filter">
+                <input type="radio" name="filter" value="all" id="filter-all">
+                <label for="filter-all">All</label>
+    
+                <input type="radio" name="filter" value="prioritized" id="filter-priority">
+                <label for="filter-priority">Priority</label>
+    
+                <input type="radio" name="filter" value="non-prioritized" id="filter-non-priority">
+                <label for="filter-non-priority">Non Priority</label>
+    
+                <input type="radio" name="filter" value="completed" id="filter-completed">
+                <label for="filter-completed">Completed</label>
+            </div>
+            <div class="task-list">
+                
+            </div>
+        </div>
+
+        <div class="undo-container">
+            <h1>Deleted Todos</h1>
+            <div class="add-todo-form">
+                <h3 class="undo-description">This is where you can undo your delete</h3>
+            </div>
+
+            <div class="undo-list">
+                <!-- <div class="deleted-item" data-id="${todoItem.id}>
+                    <div class="task-content">
+                        <p>${todoItem.item}</p>
+                    </div>
+                    <div class="task-button" >
+                        <button class="undo-btn">Undo</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

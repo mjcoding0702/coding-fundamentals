@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.container {
+    height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    
+}
+
+.display__container button{
+    pointer-events: none;
+}
+
+.display__container button:hover{
+    cursor: not-allowed;
+}
+
+.word__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.row1,.row2,.row3 {
+    margin: 10px 0px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.word__container button:hover {
+    background-color: #CCCCCC;
+}
+
+.word__container button:active {
+    background-color: #CCCCCC; /* Change the background color */
+    transform: scale(0.95); /* Scale the button down slightly */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow */
+}
+
+.display {
+    text-align: center;
+    line-height: 3rem;
+}
