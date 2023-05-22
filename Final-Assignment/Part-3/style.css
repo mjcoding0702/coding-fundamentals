@@ -1,0 +1,514 @@
+*{
+    font-family: Roboto, Arial, sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.navbar {
+    background-color: rgb(63, 63, 63);
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0px;
+    border-radius: 0 !important;
+}
+
+.logo {
+    color: #F7F7F7;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container1 {
+    max-width: 90vw;  
+    margin: 20px auto;
+}
+
+.app_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.app_title h1 {
+    color: #333740;
+    margin: 15px 0;
+    font-weight: bold;
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+.app_addItem {
+    display: flex;
+    align-items: center;
+}
+
+.nav__links {
+    display: flex;
+}
+
+.app_addItem a {
+    text-decoration: none;
+    color: #f0f0f0;
+    padding: 10px 12px;
+    background-color: rgb(41, 41, 41);
+    border-radius: 8px;
+    margin: 0 5px;
+    font-size: 12px;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.app_addItem a:hover {
+    text-decoration: none;
+    background-color: gray;
+    color: white;
+}
+
+
+.transaction_container { 
+    border-radius: 8px;
+    height: 100%;
+    margin-bottom: 100px;
+}
+
+.transaction_item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding-left: 5px;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.details_1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 14px;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+
+.date {
+    font-size: 11px;
+    margin: 10px 0px 20px 0px;
+    color: #707070;
+}
+
+.itemName {
+    margin: 8px 0px 4px 0px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.itemCategory {
+    display: block !important;
+    margin: 0px 0px 10px 0px;
+    width: 80px;
+}
+
+.itemNote{
+    margin: 0;
+    font-size: 12px;
+    color: #707070;
+}
+
+.noteLabel {
+    font-weight: bold;
+}
+
+.details_2 {
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 15px 10px 0px;
+    margin-left: 20px;
+}
+
+.amount {
+    text-align: end;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.positive {
+    color: #118C4F;
+}
+
+.negative {
+    color: rgb(255, 102, 85);
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.plusButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(41, 41, 41);
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 12px;
+}
+
+.plusButton svg {
+    width: 24px;
+    height: 24px;
+}
+
+.plusButton:hover {
+    background-color: gray;
+}
+
+.editButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; 
+    background-color: gray;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+.editButton svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+    transition: fill 0.3s ease;
+}
+
+.editButton:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.deleteButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteButton svg {
+    width: 24px;
+    height: 24px;
+}
+
+.deleteButton:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+
+
+/*Media Queries*/
+@media(max-width: 375px) {
+    .app_title h1 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .nav__links  a {
+        text-decoration: none;
+        color: #f0f0f0;
+        padding: 6px 10px;
+        background-color: #333740;
+        border-radius: 8px;
+        margin: 0 5px;
+        font-size: 12px;
+    }
+}
+
+@media(min-width: 768px){
+    .navbar {
+        height: 65px;
+    }
+    
+    .logo {
+        font-size: 22px;
+    }
+
+    .app_title h1 {
+        font-size: 35px;
+    }
+
+    .app_addItem  a {
+        text-decoration: none;
+        color: #f0f0f0;
+        padding: 12px 16px;
+        background-color: #333740;
+        border-radius: 8px;
+        margin: 0 5px;
+        font-size: 14px;
+        margin-right: 20px;
+    }
+
+    .nav__links  a {
+        padding: 10px 18px;
+        font-size: 14px;
+    }
+
+    .editButton {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .plusButton {
+        width: 50px;
+        height: 50px;
+        margin-right: 14px;
+    }
+
+    .deleteButton {
+        width: 50px;
+        height: 50px;
+    }
+    
+}
+
+@media(min-width: 1024px){
+    .container1 {
+        max-width: 80vw;  
+    }
+
+    .nav__links  a {
+        padding: 10px 18px;
+        border-radius: 8px;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .transaction_item{
+        padding: 10px;
+    }
+
+    .itemName {
+        margin: 8px 0px 8px 0px;
+        font-weight: bold;
+    }
+
+    .details_1 {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        font-size: 14px;
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .date {
+        margin-bottom: 10px;
+    }
+
+    .item_container {
+        flex: 1;
+    }
+
+    .note_container {
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10px;
+        padding-top: 30px;
+    }
+
+    .noteContent {
+        padding: 10px;
+        border-left: 3px solid gray;
+    }
+
+    .itemNote{
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .details_2{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px 15px 0px 0px;
+        margin-left: 15px;
+    }
+
+    .amountContainer {
+        min-width: 100px;
+        overflow:hidden;
+    }
+
+    .amount {
+        margin: 0;
+        font-size: 20px;
+        margin-top: 12px;
+    }
+
+    .editButton {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .plusButton {
+        width: 50px;
+        height: 50px;
+        margin-right: 22px;
+    }
+
+    .deleteButton {
+        width: 50px;
+        height: 50px;
+        margin-right: 30px;
+    }
+
+    .details_2 {
+        padding-top: 30px;
+    }
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 8vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+textarea {
+    resize: none;
+}
+
+/* The Modal (Content)*/ 
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Content*/
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  
+.btn {
+    transition: background-color 0.3s ease-out;
+}
+
+.btn.active {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+.btn.active:hover {
+    color: white;
+}
+
+
+.incomeLabel.active {
+    background-color: lightgreen;
+}
+
+.expenseLabel.active {
+    background-color: salmon;
+}
+
+#submitBtn {
+    color: white;
+    margin-top: 5px;
+}
+
+#submitBtn:active, #submitBtn:focus {
+    outline: none;
+}
+
+#saveBtn {
+    color: white;
+    margin-top: 5px;
+}
+
+#saveBtn:active, #saveBtn:focus {
+    outline: none;
+}
+
+
+/* Form Style*/
+.form-container {
+    margin-top: 20px;
+}
+  

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+    
+</head>
+<body>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+          
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary incomeLabel">
+                  <input type="radio" name="transactionType" id="incomeRadioBtn" autocomplete="off" value="income"> Income
+                </label>
+                <label class="btn btn-secondary expenseLabel">
+                  <input type="radio" name="transactionType" id="expenseRadioBtn" autocomplete="off" value="expense"> Expense
+                </label>
+            </div>
+            
+            <form class="form-container">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="formDate" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="transactionName">Name</label required>
+                <input type="text" class="form-control" id="transactionName" placeholder="Enter transaction name" maxlength="25">
+              </div>
+              
+              <div class="form-group">
+                <label for="category">Category</label>
+                <select class="form-control" id="formCategory">
+                    <optgroup label="Income" class="incomeGroup">
+                        <option value="salary">Salary</option>
+                        <option value="business">Business</option>
+                        <!-- Add more income categories as needed -->
+                    </optgroup>
+                    <optgroup label="Expenses" class="expenseGroup">
+                        <option value="grocery">Grocery</option>
+                        <option value="dining">Dining Out</option>
+                        <option value="entertainment">Entertainment</option>
+                        <option value="others">Others</option>
+                        <!-- Add more expenses categories as needed -->
+                    </optgroup>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="number" class="form-control" id="formAmount" placeholder="Enter amount" min="0" step="0.01" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="note">Note</label>
+                <textarea class="form-control" id="formNote" rows="3" maxlength="100"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-secondary" id="submitBtn">Submit</button>
+              <button type="submit" class="btn btn-secondary" id="saveBtn">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Start of the home page -->
+    <nav class="navbar">
+        <div class="logo">Finance Tracker Site</div>
+    </nav>
+
+    <div class="container1">
+        <div class="app_title">
+            <h1>Wallet Balance: <span class="positive" id="walletBalance">+100</span></h1>
+
+            <div class="app_addItem">
+                <a href="chart.html" title="View Graph Analysis">Graphs</a>
+                <button class="plusButton" title="Add Transaction">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+
+        <div class="transaction_container">
+            <!-- Sample transaction item to refer-->
+            <!-- <div class="transaction_item">
+                <div class="details_1">
+                    <div class="item_container">
+                        <p class="date">2020-07-02</p>
+                        <p class="itemName">Pick Up Grocery</p>
+                        <p class="itemCategory label label-primary">Category</p>
+                    </div>
+                    <div class="note_container">
+                        <div class="noteContent">
+                            <p class="itemNote">Throw a party! Maximum 200 characters</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="details_2">
+                    <div class="buttons">
+                        <button class="editButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M12.146 1.146a.5.5 0 0 1 .708 0l1.5 1.5a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 4.793 13.5l-2-2L11.207 2.5zm1.586 1.5L10.5 2.793 2.793 10.5l2 2L12.793 4z"/>
+                            </svg>
+                        </button>
+
+                        <button class="deleteButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash" viewBox="0 0 16 16">
+                              <path d="M2 8.5A.5.5 0 0 1 2.5 8h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8.5z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="amountContainer">
+                        <p class="amount negative">$205.95666665</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+</html>
